@@ -26,9 +26,10 @@ $(()=>{
             var index=$tar.parent().index();
             console.log(index);
             $(".move_box").css("left",LIWIDTH*index);
-        }
-    });//************************下拉内容******************************
-$(()=>{
+
+    //************************下拉内容******************************
+
+
     $.get("data/getfestivalA.php").then(data => {
         "use strict";
         var html = "";
@@ -63,5 +64,8 @@ $(()=>{
         console.log(3);
         $img.html(html);
     })
-    })
+
+        }
+    });
+
 })
